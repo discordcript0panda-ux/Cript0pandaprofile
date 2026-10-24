@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cript0 panda Profile</title>
+<style>
+@font-face {
+    font-family: 'CustomLocal';
+    src: url('Minecraft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --bg-color: #f4f4f7;
+    --card-bg: #ffffff;
+    --text-main: #111111;
+    --text-muted: #555555;
+    --border-color: #e5e7eb;
+}
+body {
+    font-family: 'CustomLocal', sans-serif;
+    background-color: var(--bg-color);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+.profile-container {
+    width: 100%;
+    max-width: 540px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 24px;
+    padding: 48px 32px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
+/* Fixed Profile Image Cropping */
+.large-header-image {
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    background-color: transparent;
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+/* Header Title Row */
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    width: 100%;
+}
+.profile-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: 2px;
+    color: var(--text-main);
+}
+/* Badge and Flag Alignment */
+.custom-badge {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+.custom-flag {
+    width: 32px;
+    height: 22px;
+    object-fit: contain;
+}
+/* Bio Description */
+.profile-bio {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin: 0 0 32px 0;
+    font-weight: 400;
+    max-width: 440px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+/* Social Icons Row Layout */
+.social-row {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.icon-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.15s ease;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+/* Divider line styling inside the box */
+.extra-divider {
+    flex-basis: 100%;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #9ca3af;
+    letter-spacing: 1px;
+    margin: 16px 0 8px 0;
+    text-transform: uppercase;
+    pointer-events: none;
+    user-select: none;
+}
+.icon-btn:hover {
+    transform: scale(1.05);
+}
+.icon-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+</style>
+</head>
+<body>
+<div class="profile-container">
+    <!-- LARGE IMAGE ABOVE -->
+    <img class="large-header-image" src="bruh2.png" alt="Profile Header Image">
+
+    <!-- Profile Title Row -->
+    <div class="title-container">
+        <h1 class="profile-title">Cript0 panda</h1>
+        <img class="custom-badge" src="verfied.png" alt="Verified Badge">
+        <img class="custom-flag" src="a.png" alt="Australia Flag">
+    </div>
+
+    <!-- Bio Description -->
+    <p class="profile-bio">Cript0 panda here, don't stick around, perv</p>
+
+    <!-- Social Icon Links Row -->
+    <div class="social-row">
+        <!-- LINK 1 -->
+        <a href="https://discordapp.com/users/1420283997136883732" target="_blank" class="icon-btn" title="Discord">
+            <img src="burh5.png" alt="Discord">
+        </a>
+        <!-- LINK 2 -->
+        <a href="https://youtube.com/@cript0panda" target="_blank" class="icon-btn" title="YouTube">
+            <img src="bruh6.png" alt="YouTube">
+        </a>
+        <!-- LINK 3 -->
+        <a href="https://twitch.tv/cript0_panda" target="_blank" class="icon-btn" title="Twitch">
+            <img src="bruh4.png" alt="Twitch">
+        </a>
+        <!-- LINK 4 -->
+        <a href="https://open.spotify.com/user/31kh35dkqfasn256tbdjdfjg5gsy" target="_blank" class="icon-btn" title="Spotify">
+            <img src="bruh.png" alt="Spotify">
+        </a>
+        <!-- LINK 5 -->
+        <a href="https://www.snapchat.com/@cript0panda" target="_blank" class="icon-btn" title="Snapchat">
+            <img src="bruh3.png" alt="Snapchat">
+        </a>
+        
+        <!-- Section Divider -->
+        <div class="extra-divider">-------- Extra --------</div>
+        
+        <a href="https://www.curseforge.com/members/cript0panda" target="_blank" class="icon-btn" title="CurseForge">
+            <img src="pbruh7.png" alt="CurseForge">
+        </a>
+        <a href="https://xbox.com/play/user/Cript0%20panda" target="_blank" class="icon-btn" title="Xbox">
+            <img src="pbruh8.png" alt="Xbox">
+        </a>
+        <a href="https://mcbedrock.net/players/xuid%3A2535469143647642" target="_blank" class="icon-btn" title="MCBedrock">
+            <img src="pburh9.png" alt="MCBedrock">
+        </a>
+    </div>
+</div>
+</body>
+</html>
