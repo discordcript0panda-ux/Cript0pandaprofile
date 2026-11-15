@@ -1,1 +1,16 @@
-//nonothing yeat
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<button id="update-btn">Check for Updates</button>
+
+<script>
+  document.getElementById('update-btn').addEventListener('click', () => {
+    window.electronAPI.checkForUpdates();
+  });
+</script>
+</body>
+</html>
